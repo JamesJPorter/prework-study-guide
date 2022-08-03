@@ -1,3 +1,14 @@
+let myImage = document.querySelector('img'); 
+
+myImage.onclick = function() {
+  let mySrc = myImage.getAttribute('src');
+  if(mySrc === './assets/bowtie-cat.png') {
+    myImage.setAttribute('src', './assets/SoT-gif.webp');
+  } else {
+    myImage.setAttribute('src','./assets/bowtie-cat.png')
+  }
+}
+
 var topics = ['HTML', 'CSS', 'Git', 'JavaScript'];
 var randomTopic = topics[Math.floor(Math.random() * topics.length)];
 
